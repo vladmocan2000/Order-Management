@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.ClientController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="table" layoutX="425.0" layoutY="81.0" onMouseClicked="#clickOnRow" prefHeight="454.0" prefWidth="352.0" />
+            <Label layoutX="344.0" layoutY="14.0" prefHeight="37.0" prefWidth="81.0" text="Clients">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Button layoutX="56.0" layoutY="188.0" mnemonicParsing="false" onAction="#addClient" text="Add client" />
+            <Button layoutX="56.0" layoutY="228.0" mnemonicParsing="false" onAction="#updateClient" text="Update client" />
+            <Button layoutX="56.0" layoutY="269.0" mnemonicParsing="false" onAction="#delete" text="Delete client" />
+            <TextField fx:id="idSearchTF" layoutX="118.0" layoutY="547.0" prefHeight="25.0" prefWidth="87.0" promptText="id" />
+            <Button layoutX="16.0" layoutY="547.0" mnemonicParsing="false" onAction="#findById" text="Search by id" />
+            <TextField fx:id="idTF" layoutX="205.0" layoutY="188.0" prefHeight="25.0" prefWidth="87.0" promptText="id" />
+            <TextField fx:id="nameTF" layoutX="205.0" layoutY="228.0" prefHeight="25.0" prefWidth="87.0" promptText="Name" />
+            <TextField fx:id="addressTF" layoutX="205.0" layoutY="269.0" prefHeight="25.0" prefWidth="87.0" promptText="Address" />
+            <Button layoutX="561.0" layoutY="547.0" mnemonicParsing="false" onAction="#showTable" text="Show content" />
+         </children></Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

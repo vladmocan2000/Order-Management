@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.presentation.Controller">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="clientButton" layoutX="124.0" layoutY="110.0" mnemonicParsing="false" onAction="#client" text="Client" />
+            <Button fx:id="productButton" layoutX="124.0" layoutY="157.0" mnemonicParsing="false" onAction="#product" text="Product" />
+            <Button fx:id="orderButton" layoutX="124.0" layoutY="206.0" mnemonicParsing="false" onAction="#order" text="Order" />
+         </children></Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
